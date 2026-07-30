@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp" 
+    android:viewportWidth="24" android:viewportHeight="24">
+    <!-- 🚀 Exact 5-bar Apple waveform -->
+    <path android:fillColor="#FFFFFF" 
+          android:pathData="M11,4 h2 v16 h-2 z M7,8 h2 v8 h-2 z M15,8 h2 v8 h-2 z M3,11 h2 v2 h-2 z M19,11 h2 v2 h-2 z" />
+</vector>

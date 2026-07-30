@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget_root"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <!-- 🚀 FIX: Bumped to 12sp for better readability -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="DAILY NEWS" android:textColor="#95271D" android:textSize="12sp" 
+            android:fontFamily="sans-serif-black" android:layout_alignParentStart="true" />
+            
+        <!-- 🚀 ACTUAL FIX: Massively increased to 24dp to match iOS and the Medium widget -->
+        <ImageView android:layout_width="24dp" android:layout_height="24dp"
+            android:src="@drawable/ic_waveform" android:tint="#9995271D" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <!-- Spacer pushes content to the bottom -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+    <!-- 🚀 ACTUAL FIX: Increased title to 18sp for the bold Apple look -->
+    <TextView android:id="@+id/widget_title" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Discover News" android:textColor="#000000" android:textSize="18sp" 
+        android:textStyle="bold" android:maxLines="2" android:ellipsize="end" android:layout_marginBottom="8dp"/>
+
+    <!-- Apple-style Pill -->
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:background="@drawable/bg_capsule" android:paddingLeft="10dp" android:paddingRight="10dp" 
+        android:paddingTop="5dp" android:paddingBottom="5dp" android:gravity="center_vertical" android:orientation="horizontal">
+        
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="LISTEN NOW" android:textColor="#95271D" android:textSize="10sp" 
+            android:fontFamily="sans-serif-black" android:layout_marginEnd="4dp"/>
+            
+        <ImageView android:layout_width="12dp" android:layout_height="12dp" 
+            android:src="@android:drawable/ic_media_play" android:tint="#95271D"/>
+    </LinearLayout>
+
+</LinearLayout>
